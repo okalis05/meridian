@@ -1,0 +1,24 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}FEO Meridian Brands{% endblock %}</title>
+  <meta name="description" content="Executive promotional products, corporate gifting, branded apparel, and custom merchandise by FEO Meridian Brands LLC.">
+  <link rel="stylesheet" href="{% static 'css/meridian.css' %}">
+</head>
+<body>
+  <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <aside class="side glass">
+    <div class="mark">FEO</div><div class="brand">Meridian<br>Brands</div>
+    <nav>
+      <a href="/">Home</a><a href="/products/">Products</a><a href="/customizer/">Studio</a><a href="/quotes/">Quotes</a><a href="/ai/">AI</a><a href="/portal/">Portal</a><a href="/dealer/">Dealer</a><a href="/blog/">Insights</a>
+    </nav>
+  </aside>
+  <main class="page">
+    <header class="top glass"><span>FEO MERIDIAN BRANDS LLC</span><a class="btn" href="/quotes/">Request Quote</a></header>
+    {% block content %}{% endblock %}
+  </main>
+  <script src="{% static 'js/meridian.js' %}"></script>
+</body></html>

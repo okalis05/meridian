@@ -1,0 +1,4 @@
+
+{% extends 'base.html' %}{% block content %}
+<section class="hero glass"><p class="eyebrow">Luxury Promotional Commerce</p><h1 class="title">Executive branded products for companies that want to be remembered.</h1><p class="lead">FEO Meridian Brands LLC sells customized promotional products for businesses, organizations, and corporations with a premium quote-first experience.</p><div class="grid">{% for item in items %}<div class="card"><h3>{{ item }}</h3><p>Designed with glassmorphism, premium spacing, and corporate polish.</p></div>{% endfor %}</div></section>
+{% endblock %}
